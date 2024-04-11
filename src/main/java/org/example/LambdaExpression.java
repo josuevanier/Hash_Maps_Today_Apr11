@@ -13,6 +13,6 @@ public class LambdaExpression {
             }
         };
         d.draw();
-
+        System.out.println();
 
 }}
