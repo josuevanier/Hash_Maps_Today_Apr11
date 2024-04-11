@@ -2,16 +2,16 @@ package org.example;
 interface Drawable{
     void draw();
 }
-interface Sayable{
+interface Sayable {
     String say(String name);
+}
+interface Addable{
+    int add(int a, int b);
+
 }
 public class LambdaExpression {
     public static void main(String[] args) {
-
-        Sayable s1 = (name)->{
-            return "say " + name;
-        } ;
-        System.out.println(s1.say("noo"));
-
+        Addable ad1 = (a, b)->(a+b);
+        System.out.println(ad1.add(10,20));
 
 }}
