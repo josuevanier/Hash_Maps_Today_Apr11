@@ -6,13 +6,9 @@ public class LambdaExpression {
     public static void main(String[] args) {
         int width = 19;
 
-        Drawable d = new Drawable() {
-            @Override
-            public void draw() {
-                System.out.println("Width " + width);
-            }
-        };
-        d.draw();
-        System.out.println();
+      Drawable d2 =()->{
+          System.out.println("Drawing" + width);
+      };
+      d2.draw();
 
 }}
