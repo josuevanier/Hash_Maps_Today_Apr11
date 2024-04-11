@@ -22,6 +22,7 @@ public class MapDemo {
             Map.Entry mentry = (Map.Entry)iterator.next();
             System.out.println(mentry.getKey() + " " + mentry.getValue());
         }
+        System.out.println();
         String var = map.get(2);
         map.remove(3);
         map.putIfAbsent(103,"Gauvar");
