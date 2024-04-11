@@ -2,13 +2,16 @@ package org.example;
 interface Drawable{
     void draw();
 }
+interface Sayable{
+    String say(String name);
+}
 public class LambdaExpression {
     public static void main(String[] args) {
-        int width = 19;
 
-      Drawable d2 =()->{
-          System.out.println("Drawing" + width);
-      };
-      d2.draw();
+        Sayable s1 = (name)->{
+            return "say " + name;
+        } ;
+        System.out.println(s1.say("noo"));
+
 
 }}
